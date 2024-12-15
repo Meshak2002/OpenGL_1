@@ -1,6 +1,7 @@
 
 #include "Renderer.h"
 #include "iostream"
+#include "GL/glew.h"
 
 void ClearGLErrors()
 {
@@ -16,3 +17,18 @@ bool IsGlError(const char* file,const char* functionName,int line)
     }
     return error;
 }
+
+void Renderer::Clear() const
+{
+    CheckGL(glClear(GL_COLOR_BUFFER_BIT));;
+}
+
+void Renderer::Draw(Shader& shader, VertexArray& vao, IndexBuffer& ibo) const
+{
+    shader.bind();
+    vao.Bind();
+    ibo.Bind();
+    CheckGL(glDrawElements(GL_TRIANGLES,ibo.GetCount(),GL_UNSIGNED_INT,nullptr));
+
+}
+

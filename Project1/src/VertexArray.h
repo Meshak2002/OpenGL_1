@@ -1,6 +1,7 @@
 #pragma once
-#include "VertexBuffer.h"
-#include "VertexBufferLayout.h"
+
+class VertexBuffer;
+class VertexBufferLayout;
 
 class VertexArray
 {
@@ -9,7 +10,7 @@ public:
     ~VertexArray();
     void Bind();
     void Unbind();
-    void AddVertexBuffer(VertexBuffer& vertexBuffer,VertexBufferLayout& vertexLayer);
+    void AddVertexBuffer(VertexBuffer& vertexBuffer,VertexBufferLayout& vbLayout);
 private:
     unsigned int m_RendererID;
     

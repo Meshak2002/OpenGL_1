@@ -1,4 +1,6 @@
 #include "VertexArray.h"
+#include "VertexBuffer.h"
+#include "VertexBufferLayout.h"
 #include "Renderer.h"
 #include "GL/glew.h"
 
@@ -22,16 +24,18 @@ void VertexArray::Unbind()
     CheckGL(glBindVertexArray(0));
 }
 
-void VertexArray::AddVertexBuffer(VertexBuffer& vertexBuffer, VertexBufferLayout& vertexLayer)
+void VertexArray::AddVertexBuffer(VertexBuffer& vertexBuffer, VertexBufferLayout& vbLayout)
 {
     Bind();
     vertexBuffer.Bind();
+    
     unsigned int pointer=0;
-    for(int i=0; i<vertexLayer.layouts.size(); i++)
+    const auto& layouts = vbLayout.GetLayouts();
+    for(unsigned int i=0; i<layouts.size(); i++)
     {
         CheckGL(glEnableVertexAttribArray(i));
-        CheckGL(glVertexAttribPointer(i,vertexLayer.layouts[i].components,vertexLayer.layouts[i].dataType,vertexLayer.layouts[i].normalized,
-            vertexLayer.layouts[i].stride,(char*)(pointer))  );
-        pointer += vertexLayer.layouts[i].components*sizeof(vertexLayer.layouts[i].dataType);
+        CheckGL(glVertexAttribPointer(i,     layouts[i].components,     layouts[i].dataType,     layouts[i].normalized,
+          vbLayout.GetStrideLength(),  (char*)(pointer))  );
+        pointer += layouts[i].components*sizeof(layouts[i].dataType);
     }
 }

@@ -1,23 +1,43 @@
 #pragma once
 #include <vector>
 #include <GL/glew.h>
+#include "Renderer.h"
 
-struct LayoutAttributes
+struct LayoutAttribute
 {
     unsigned int components;
     GLenum dataType;
     GLboolean normalized;
-    GLsizei stride;
+
+    unsigned int GetSizeOf(unsigned int dataType)
+    {
+        switch (dataType)
+        {
+            case GL_FLOAT:
+                return 4;
+            case GL_UNSIGNED_INT:
+                return 4;
+            case GL_UNSIGNED_BYTE:
+                return 1;
+            case GL_INT:
+                return 4;
+        }
+        Assess(true);
+        return 0;
+    }
 };
 
 class VertexBufferLayout
 {
-    public:
+private:
+    unsigned int m_stride;
+    std::vector<LayoutAttribute> layouts;
+public:
     VertexBufferLayout();
-    ~VertexBufferLayout();
-    
     template<typename T>
     void AssignLayoutElement(unsigned int components,GLboolean normalized);
-    std::vector<LayoutAttributes> layouts;
+
+    std::vector<LayoutAttribute> GetLayouts() const;
+    unsigned int GetStrideLength() const;
 };
 
