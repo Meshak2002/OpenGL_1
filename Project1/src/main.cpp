@@ -21,6 +21,7 @@ int main()
 
 	window = glfwCreateWindow(640, 480, "Welcome Window",NULL,NULL );
 	glfwMakeContextCurrent(window);
+	
 	if(glewInit()==GLEW_OK)
 		std::cout << glGetString(GL_VERSION) << std::endl;
 	{
