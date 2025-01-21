@@ -1,10 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\C\u002B\u002B\\Project1\\",
+  "WorkspaceRootPath": "A:\\C\u002B\u002B\\OpenGL_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|A:\\C\u002B\u002B\\Project1\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|solutionrelative:Project1\\src\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8D4C2B1D-B450-43EE-BB5D-FACAE2F874AE}|Project1\\Project1.vcxproj|solutionrelative:Project1\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\C\u002B\u002B\\Project1\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +26,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\Texture.cpp",
+              "RelativeDocumentMoniker": "Project1\\src\\Texture.cpp",
+              "ToolTip": "A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\Texture.cpp",
+              "RelativeToolTip": "Project1\\src\\Texture.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-22T18:37:42.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\main.cpp",
+              "RelativeDocumentMoniker": "Project1\\src\\main.cpp",
+              "ToolTip": "A:\\C\u002B\u002B\\OpenGL_1\\Project1\\src\\main.cpp",
+              "RelativeToolTip": "Project1\\src\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-22T18:32:59.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "A:\\C\u002B\u002B\\Project1\\Project1\\main.cpp",
-              "RelativeDocumentMoniker": "Project1\\main.cpp",
+              "RelativeDocumentMoniker": "..\\Project1\\Project1\\main.cpp",
               "ToolTip": "A:\\C\u002B\u002B\\Project1\\Project1\\main.cpp",
-              "RelativeToolTip": "Project1\\main.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "RelativeToolTip": "..\\Project1\\Project1\\main.cpp",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-19T17:32:04.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T17:32:04.963Z"
             }
           ]
         }

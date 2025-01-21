@@ -1,4 +1,4 @@
-﻿  main.cpp
-  Project1.vcxproj -> A:\C++\Project1\x64\Debug\Project1.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
+﻿Texture.obj : error LNK2019: unresolved external symbol stbi_load referenced in function "public: __cdecl Texture::Texture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Texture@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Texture.obj : error LNK2019: unresolved external symbol stbi_image_free referenced in function "public: __cdecl Texture::Texture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Texture@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Texture.obj : error LNK2019: unresolved external symbol stbi_set_flip_vertically_on_load referenced in function "public: __cdecl Texture::Texture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Texture@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+A:\C++\OpenGL_1\x64\Debug\Project1.exe : fatal error LNK1120: 3 unresolved externals

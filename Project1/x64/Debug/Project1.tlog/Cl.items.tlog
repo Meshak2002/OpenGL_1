@@ -2,6 +2,14 @@ A:\C++\OpenGL_1\Project1\src\IndexBuffer.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\
 A:\C++\OpenGL_1\Project1\src\main.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\main.obj
 A:\C++\OpenGL_1\Project1\src\Renderer.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Renderer.obj
 A:\C++\OpenGL_1\Project1\src\Shader.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Shader.obj
+A:\C++\OpenGL_1\Project1\src\Texture.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Texture.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_demo.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_demo.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_draw.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_draw.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_impl_glfw.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_impl_glfw.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_impl_opengl3.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_impl_opengl3.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_tables.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_tables.obj
+A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui_widgets.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui_widgets.obj
 A:\C++\OpenGL_1\Project1\src\VertexArray.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\VertexArray.obj
 A:\C++\OpenGL_1\Project1\src\VertexBuffer.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\VertexBuffer.obj
 A:\C++\OpenGL_1\Project1\src\VertexBufferLayout.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\VertexBufferLayout.obj

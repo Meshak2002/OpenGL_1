@@ -20,7 +20,7 @@ bool IsGlError(const char* file,const char* functionName,int line)
 
 void Renderer::Clear() const
 {
-    CheckGL(glClear(GL_COLOR_BUFFER_BIT));;
+    CheckGL(glClear(GL_COLOR_BUFFER_BIT));
 }
 
 void Renderer::Draw(Shader& shader, VertexArray& vao, IndexBuffer& ibo) const

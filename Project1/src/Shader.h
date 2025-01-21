@@ -2,6 +2,8 @@
 
 #include <string>
 #include <unordered_map>
+#include "glm/glm.hpp"
+#include <glm/fwd.hpp>
 
 struct ShaderSrc
 {
@@ -23,6 +25,8 @@ public:
     void bind();
     void unbind();
     void SetUniform4f(std::string name, float x, float y, float z, float w);
+    void SetUniform1f(std::string name, float x);
+    void SetUniformMatrix(const std::string& name, glm::mat4& matrix);
 private:
     unsigned int m_renderId;
     std::string m_filePath;

@@ -88,6 +88,16 @@ void Shader::SetUniform4f(std::string name, float x, float y, float z, float w)
     glUniform4f(   GetUniformLoc(name)   ,x,y,z,w);
 }
 
+void Shader::SetUniform1f(std::string name, float x)
+{
+    glUniform1f( GetUniformLoc(name)   ,x);
+}
+
+void Shader::SetUniformMatrix(const std::string& name, glm::mat4& matrix)
+{
+   CheckGL( glUniformMatrix4fv(GetUniformLoc(name),1,GL_FALSE,&matrix[0][0]) );
+}
+
 int Shader::GetUniformLoc(std::string name)
 {
     if(m_uniformLocationCache.find(name) != m_uniformLocationCache.end())
