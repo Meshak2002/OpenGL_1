@@ -98,10 +98,22 @@ void Shader::SetUniformMatrix(const std::string& name, glm::mat4& matrix)
    CheckGL( glUniformMatrix4fv(GetUniformLoc(name),1,GL_FALSE,&matrix[0][0]) );
 }
 
-int Shader::GetUniformLoc(std::string name)
+void Shader::SetUniform1i(std::string name, bool enabled)
+{
+    CheckGL(glUniform1i(GetUniformLoc(name),(int)enabled));
+}
+
+void Shader::SetUniform1iv(std::string name , unsigned int count , GLint* data)
+{
+    CheckGL(glUniform1iv(GetUniformLoc(name),count,data));
+}
+
+
+int Shader::GetUniformLoc(std::string name) const
 {
     if(m_uniformLocationCache.find(name) != m_uniformLocationCache.end())
         return m_uniformLocationCache[name];
+    
     int shaderColorVar = glGetUniformLocation(m_renderId, &name[0]);
     if(shaderColorVar == -1)
         std::cout<<"Failed to get uniform location!"<<std::endl;

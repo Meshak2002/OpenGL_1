@@ -1,6 +1,10 @@
 A:\C++\OpenGL_1\Project1\src\IndexBuffer.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\IndexBuffer.obj
 A:\C++\OpenGL_1\Project1\src\main.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\main.obj
 A:\C++\OpenGL_1\Project1\src\Renderer.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Renderer.obj
+A:\C++\OpenGL_1\Project1\src\Scenes\BaseScene.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\BaseScene.obj
+A:\C++\OpenGL_1\Project1\src\Scenes\BatchRendering.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\BatchRendering.obj
+A:\C++\OpenGL_1\Project1\src\Scenes\MultiObjects.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\MultiObjects.obj
+A:\C++\OpenGL_1\Project1\src\Scenes\PNGScene.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\PNGScene.obj
 A:\C++\OpenGL_1\Project1\src\Shader.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Shader.obj
 A:\C++\OpenGL_1\Project1\src\Texture.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\Texture.obj
 A:\C++\OpenGL_1\Project1\src\vendor\imgui\imgui.cpp;A:\C++\OpenGL_1\Project1\x64\Debug\imgui.obj

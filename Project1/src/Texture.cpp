@@ -27,11 +27,16 @@ Texture::~Texture()
 
 void Texture::Bind(unsigned int slot)
 {
-    CheckGL(glActiveTexture(GL_TEXTURE0 + slot));
+    CheckGL(glActiveTexture(GL_TEXTURE0 + slot));  //A texture Unit
     CheckGL(glBindTexture(GL_TEXTURE_2D,m_RendererID));
 }
 
 void Texture::Unbind()
 {
     CheckGL(glBindTexture(GL_TEXTURE_2D,0));
+}
+
+const unsigned int Texture::GetRenderId()
+{
+    return m_RendererID;
 }

@@ -30,11 +30,11 @@ void VertexArray::AddVertexBuffer(VertexBuffer& vertexBuffer, VertexBufferLayout
     vertexBuffer.Bind();
     
     unsigned int pointer=0;
-    const auto& layouts = vbLayout.GetLayouts();
+    const auto& layouts = vbLayout.GetLayouts();     
     for(unsigned int i=0; i<layouts.size(); i++)
     {
-        CheckGL(glEnableVertexAttribArray(i));
-        CheckGL(glVertexAttribPointer(i,     layouts[i].components,     layouts[i].dataType,     layouts[i].normalized,
+        CheckGL(glEnableVertexAttribArray(layouts[i].attributeLocation));
+        CheckGL(glVertexAttribPointer(layouts[i].attributeLocation,  layouts[i].components, layouts[i].dataType, layouts[i].normalized,
           vbLayout.GetStrideLength(),  (char*)(pointer))  );
         pointer += layouts[i].components*sizeof(layouts[i].dataType);
     }

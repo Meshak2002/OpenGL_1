@@ -8,6 +8,7 @@ public:
     ~Texture();
     void Bind(unsigned int slot = 0);
     void Unbind();
+    const unsigned int GetRenderId();
 private:
     unsigned int m_RendererID;
     unsigned char* data;

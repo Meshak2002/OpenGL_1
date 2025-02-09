@@ -3,10 +3,19 @@
 #include <GL/glew.h>
 #include "Renderer.h"
 
+enum EAttributeType
+{
+    TYPE_Position=0,
+    TYPE_Color=1,
+    TYPE_TexCoor =2,
+    TYPE_TexSlot =3 
+};
+
 struct LayoutAttribute
 {
     unsigned int components;
     GLenum dataType;
+    EAttributeType attributeLocation;
     GLboolean normalized;
 
     unsigned int GetSizeOf(unsigned int dataType)
@@ -35,7 +44,7 @@ private:
 public:
     VertexBufferLayout();
     template<typename T>
-    void AssignLayoutElement(unsigned int components,GLboolean normalized);
+    void AssignLayoutElement(unsigned int components,EAttributeType attributeType,GLboolean normalized);
 
     std::vector<LayoutAttribute> GetLayouts() const;
     unsigned int GetStrideLength() const;

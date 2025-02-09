@@ -2,6 +2,8 @@
 
 #include <string>
 #include <unordered_map>
+#include <GL/glew.h>
+
 #include "glm/glm.hpp"
 #include <glm/fwd.hpp>
 
@@ -27,15 +29,16 @@ public:
     void SetUniform4f(std::string name, float x, float y, float z, float w);
     void SetUniform1f(std::string name, float x);
     void SetUniformMatrix(const std::string& name, glm::mat4& matrix);
+    void SetUniform1i(std::string name, bool enabled);
+    void SetUniform1iv(std::string name , unsigned int count , GLint* data);
 private:
     unsigned int m_renderId;
     std::string m_filePath;
-    std::unordered_map<std::string, int> m_uniformLocationCache;
+    mutable std::unordered_map<std::string, int> m_uniformLocationCache;
     ShaderSrc ParseShaders(std::string directory);
     unsigned int CompileShader(unsigned int type, std::string source);
     unsigned int CreateShaderProgram(std::string vertexShaderSource, std::string fragmentShaderSource);
-    int GetUniformLoc(std::string name);
-    
+    int GetUniformLoc(std::string name) const;
 };
 
 
