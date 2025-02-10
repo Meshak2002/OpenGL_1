@@ -27,7 +27,7 @@ void VertexArray::Unbind()
 void VertexArray::AddVertexBuffer(VertexBuffer& vertexBuffer, VertexBufferLayout& vbLayout)
 {
     Bind();
-    vertexBuffer.Bind();
+    //vertexBuffer.Bind();
     
     unsigned int pointer=0;
     const auto& layouts = vbLayout.GetLayouts();     
